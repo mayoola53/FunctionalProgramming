@@ -14,9 +14,22 @@ public class Starter {
 //        AnonClass anonClass = new AnonClass();
 //        anonClass.runThread();
 
-        Streams streams = new Streams();
-        streams.useForLopp();
+//        Streams streams = new Streams();
+//        streams.useForLopp();
+//
+//        streams.useLambdas();
 
-        streams.useLambdas();
+        NumberDoubler doubler =  x-> x*2;
+        System.out.println(doubler.doublenNumber(3));
+
     }
+
+    interface NumberDoubler{
+        int doublenNumber(int x);
+
+    }
+
+
+
+
 }
